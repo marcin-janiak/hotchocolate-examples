@@ -1,11 +1,11 @@
 ﻿using System.Linq;
+using GettingStarted.PCF.Data;
+using GettingStarted.PCF.Models;
 using HotChocolate;
 using HotChocolate.Types;
 using HotChocolate.Types.Relay;
-using PCF.GettingStarted.Data;
-using PCF.GettingStarted.Models;
 
-namespace PCF.GettingStarted
+namespace GettingStarted.PCF
 {
     public class Query
     {

@@ -13,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\PCF.GettingStarted\PCF.GettingStarted.csproj" />
+      <ProjectReference Include="..\GettingStarted.PCF\GettingStarted.PCF.csproj" />
     </ItemGroup>
 
 </Project>

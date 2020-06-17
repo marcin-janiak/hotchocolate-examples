@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
+using GettingStarted.PCF.Models;
 using Microsoft.EntityFrameworkCore;
-using PCF.GettingStarted.Models;
 
-namespace PCF.GettingStarted.Data
+namespace GettingStarted.PCF.Data
 {
     public class BooksContext : DbContext
     {

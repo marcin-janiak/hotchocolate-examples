@@ -2,6 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <AssemblyName>GettingStarted.PCF</AssemblyName>
+        <RootNamespace>GettingStarted.PCF</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

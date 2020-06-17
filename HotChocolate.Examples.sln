@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CF", "CF", "{001E7856-5D98-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SF", "SF", "{AA106415-D0B4-4C46-83BF-1C552F82D7B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCF.GettingStarted", "GettingStarted\PCF\PCF.GettingStarted\PCF.GettingStarted.csproj", "{3A7FEE10-8405-4F7F-927D-53FA2C9FC8CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.PCF", "GettingStarted\PCF\GettingStarted.PCF\GettingStarted.PCF.csproj", "{3A7FEE10-8405-4F7F-927D-53FA2C9FC8CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCF.GettingStarted.Tests", "GettingStarted\PCF\PCF.GettingStarted.Tests\PCF.GettingStarted.Tests.csproj", "{C497AE27-7C4D-4A4D-983A-6E56B3A87593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GettingStarted.PCF.Tests", "GettingStarted\PCF\GettingStarted.PCF.Tests\GettingStarted.PCF.Tests.csproj", "{C497AE27-7C4D-4A4D-983A-6E56B3A87593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

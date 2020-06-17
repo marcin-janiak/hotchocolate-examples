@@ -3,7 +3,7 @@ using HotChocolate;
 using Snapshooter.Xunit;
 using Xunit;
 
-namespace PCF.GettingStarted.Tests
+namespace GettingStarted.PCF.Tests
 {
     public class GettingStartedTests
     {

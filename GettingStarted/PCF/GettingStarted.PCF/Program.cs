@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace PCF.GettingStarted
+namespace GettingStarted.PCF
 {
     public class Program
     {

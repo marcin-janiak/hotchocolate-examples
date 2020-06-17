@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PCF.GettingStarted.Models
+namespace GettingStarted.PCF.Models
 {
     public class Author
     {

@@ -1,3 +1,4 @@
+using GettingStarted.PCF.Data;
 using HotChocolate;
 using HotChocolate.AspNetCore;
 using Microsoft.AspNetCore.Builder;
@@ -6,12 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Console;
-using Microsoft.Extensions.Options;
-using PCF.GettingStarted.Data;
 
-namespace PCF.GettingStarted
+namespace GettingStarted.PCF
 {
     public class Startup
     {
