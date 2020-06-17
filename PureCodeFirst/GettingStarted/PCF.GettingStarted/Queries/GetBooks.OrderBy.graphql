@@ -1,0 +1,7 @@
+﻿{
+    books(order_by: { title: ASC }) {
+        nodes {
+            title
+        }
+    }
+}

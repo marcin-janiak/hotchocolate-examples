@@ -1,0 +1,163 @@
+﻿schema {
+  query: Query
+}
+
+type Author {
+  books: [Book]
+  firstName: String
+  id: Int!
+  lastName: String
+}
+
+type Book {
+  author: Author
+  authorId: Int!
+  id: Int!
+  title: String
+}
+
+"A connection to a list of items."
+type BookConnection {
+  "A list of edges."
+  edges: [BookEdge!]
+  "A flattened list of the nodes."
+  nodes: [Book]
+  "Information to aid in pagination."
+  pageInfo: PageInfo!
+  totalCount: Int!
+}
+
+"An edge in a connection."
+type BookEdge {
+  "A cursor for use in pagination."
+  cursor: String!
+  "The item at the end of the edge."
+  node: Book
+}
+
+"Information about pagination in a connection."
+type PageInfo {
+  "When paginating forwards, the cursor to continue."
+  endCursor: String
+  "Indicates whether more edges exist following the set defined by the clients arguments."
+  hasNextPage: Boolean!
+  "Indicates whether more edges exist prior the set defined by the clients arguments."
+  hasPreviousPage: Boolean!
+  "When paginating backwards, the cursor to continue."
+  startCursor: String
+}
+
+type Query {
+  authors: [Author]
+  books(after: String before: String first: PaginationAmount last: PaginationAmount order_by: BookSort where: BookFilter): BookConnection
+}
+
+input AuthorFilter {
+  AND: [AuthorFilter!]
+  books_all: BookFilter
+  books_any: Boolean
+  books_none: BookFilter
+  books_some: BookFilter
+  firstName: String
+  firstName_contains: String
+  firstName_ends_with: String
+  firstName_in: [String]
+  firstName_not: String
+  firstName_not_contains: String
+  firstName_not_ends_with: String
+  firstName_not_in: [String]
+  firstName_not_starts_with: String
+  firstName_starts_with: String
+  id: Int
+  id_gt: Int
+  id_gte: Int
+  id_in: [Int!]
+  id_lt: Int
+  id_lte: Int
+  id_not: Int
+  id_not_gt: Int
+  id_not_gte: Int
+  id_not_in: [Int!]
+  id_not_lt: Int
+  id_not_lte: Int
+  lastName: String
+  lastName_contains: String
+  lastName_ends_with: String
+  lastName_in: [String]
+  lastName_not: String
+  lastName_not_contains: String
+  lastName_not_ends_with: String
+  lastName_not_in: [String]
+  lastName_not_starts_with: String
+  lastName_starts_with: String
+  OR: [AuthorFilter!]
+}
+
+input AuthorSort {
+  firstName: SortOperationKind
+  id: SortOperationKind
+  lastName: SortOperationKind
+}
+
+input BookFilter {
+  AND: [BookFilter!]
+  author: AuthorFilter
+  authorId: Int
+  authorId_gt: Int
+  authorId_gte: Int
+  authorId_in: [Int!]
+  authorId_lt: Int
+  authorId_lte: Int
+  authorId_not: Int
+  authorId_not_gt: Int
+  authorId_not_gte: Int
+  authorId_not_in: [Int!]
+  authorId_not_lt: Int
+  authorId_not_lte: Int
+  id: Int
+  id_gt: Int
+  id_gte: Int
+  id_in: [Int!]
+  id_lt: Int
+  id_lte: Int
+  id_not: Int
+  id_not_gt: Int
+  id_not_gte: Int
+  id_not_in: [Int!]
+  id_not_lt: Int
+  id_not_lte: Int
+  OR: [BookFilter!]
+  title: String
+  title_contains: String
+  title_ends_with: String
+  title_in: [String]
+  title_not: String
+  title_not_contains: String
+  title_not_ends_with: String
+  title_not_in: [String]
+  title_not_starts_with: String
+  title_starts_with: String
+}
+
+input BookSort {
+  author: AuthorSort
+  authorId: SortOperationKind
+  id: SortOperationKind
+  title: SortOperationKind
+}
+
+enum SortOperationKind {
+  ASC
+  DESC
+}
+
+"The `Boolean` scalar type represents `true` or `false`."
+scalar Boolean
+
+"The `Int` scalar type represents non-fractional signed whole numeric values. Int can represent values between -(2^31) and 2^31 - 1."
+scalar Int
+
+scalar PaginationAmount
+
+"The `String` scalar type represents textual data, represented as UTF-8 character sequences. The String type is most often used by GraphQL to represent free-form human-readable text."
+scalar String

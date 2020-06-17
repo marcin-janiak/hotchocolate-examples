@@ -1,0 +1,10 @@
+﻿{
+    books(where: { title_contains: "in" }) {
+        nodes {
+            title
+            author {
+                firstName
+            }
+        }
+    }
+}

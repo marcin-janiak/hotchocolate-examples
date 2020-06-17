@@ -1,0 +1,10 @@
+﻿{
+    books(where: { author: { firstName: "Andrzej" } }) {
+        nodes {
+            title
+            author {
+                firstName
+            }
+        }
+    }
+}

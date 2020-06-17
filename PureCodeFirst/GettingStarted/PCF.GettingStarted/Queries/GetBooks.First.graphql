@@ -1,0 +1,14 @@
+{
+    books(first: 3) {
+        totalCount
+        pageInfo {
+            startCursor
+            endCursor
+            hasNextPage
+            hasPreviousPage
+        }
+        nodes {
+            title
+        }
+    }
+}

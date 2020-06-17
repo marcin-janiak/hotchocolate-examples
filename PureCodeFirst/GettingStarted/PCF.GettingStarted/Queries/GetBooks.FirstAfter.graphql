@@ -1,0 +1,14 @@
+{
+    books(first: 3, after: "eyJfX3RvdGFsQ291bnQiOjEzLCJfX3Bvc2l0aW9uIjoyfQ==") {
+        totalCount
+        pageInfo {
+            startCursor
+            endCursor
+            hasNextPage
+            hasPreviousPage
+        }
+        nodes {
+            title
+        }
+    }
+}

@@ -1,0 +1,6 @@
+﻿{
+    authors {
+        firstName
+        lastName
+    }
+}

@@ -1,0 +1,10 @@
+﻿{
+    books(order_by: { author: { firstName: DESC }, title: ASC }) {
+        nodes {
+            title
+            author {
+                firstName
+            }
+        }
+    }
+}
