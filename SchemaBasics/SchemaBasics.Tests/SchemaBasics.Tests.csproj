@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include=".Mutations\AddBook.graphql" />
+      <Content Include=".Mutations\CreateAuthor.graphql" />
+      <Content Include=".Queries\GetBooks.graphql" />
+      <Content Include=".Queries\GetBooksAndAuthors.graphql" />
+    </ItemGroup>
+
+</Project>

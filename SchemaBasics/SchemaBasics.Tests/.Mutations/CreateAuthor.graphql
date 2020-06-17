@@ -1,0 +1,11 @@
+mutation createAuthorWithBook {
+    createAuthor(authorAndBook: {
+        authorName:"J.K. Rowling",
+        title:"Harry Potter and the Philosopher’s Stone"
+    }) {
+        name
+        books {
+            title
+        }
+    }
+}

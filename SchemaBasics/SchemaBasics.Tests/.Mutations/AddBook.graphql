@@ -1,0 +1,6 @@
+mutation addBook {
+    addBook(authorId:1, title:"Freshly written book") {
+        title
+        id
+    }
+}
