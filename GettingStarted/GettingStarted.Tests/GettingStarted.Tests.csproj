@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HotChocolate.Types" Version="11.0.0-preview.135" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.6.1" />
+        <PackageReference Include="Snapshooter.Xunit" Version="0.5.4" />
+        <PackageReference Include="xunit" Version="2.4.1" />
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\GettingStarted.PCF\GettingStarted.PCF.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include=".Queries\GetAuthors.graphql">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.First.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.FirstAfter.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.OrderBy.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.OrderBy.Nested.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.Where.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include=".Queries\GetBooks.Where.Nested.graphql" >
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+
+</Project>

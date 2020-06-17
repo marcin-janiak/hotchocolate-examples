@@ -1,0 +1,17 @@
+﻿{
+  "Data": {
+    "authors": [
+      {
+        "firstName": "Andrzej",
+        "lastName": "Sapkowski"
+      },
+      {
+        "firstName": "Stephen",
+        "lastName": "King"
+      }
+    ]
+  },
+  "Errors": null,
+  "Extensions": null,
+  "ContextData": null
+}
