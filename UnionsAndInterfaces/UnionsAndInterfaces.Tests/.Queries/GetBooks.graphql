@@ -1,0 +1,22 @@
+query GetBooks {
+    books {
+        title
+        ... on TextBook {
+            __typename
+            classes {
+                name
+            }
+        }
+
+        ... on ColoringBook {
+            __typename
+
+            colors {
+                value
+            }
+        }
+        author {
+            name
+        }
+    }
+}
